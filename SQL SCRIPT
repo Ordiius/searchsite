@@ -1,0 +1,83 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Хост: 127.0.0.1:3306
+-- Час створення: Трв 22 2023 р., 20:49
+-- Версія сервера: 8.0.30
+-- Версія PHP: 7.2.34
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- База даних: `search`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблиці `something`
+--
+
+CREATE TABLE `something` (
+  `id` int NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `url` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Дамп даних таблиці `something`
+--
+
+INSERT INTO `something` (`id`, `name`, `description`, `url`) VALUES
+(1, 'Python', 'Мова програмування', 'https://www.python.org/'),
+(2, 'JavaScript', 'Мова програмування', 'https://uk.wikipedia.org/wiki/JavaScript'),
+(3, 'Java', 'Мова програмування', 'https://www.java.com/'),
+(5, 'php', 'Мова програмування', 'https://www.php.net/'),
+(6, 'css', 'Каскадна таблиця стилів(Під веб розробку)', 'https://ua.wikipedia.org/wiki/CSS'),
+(7, 'Черкаси', 'Черкас не існує!', 'https://nv.ua/ukr/lifestyle/zhitomira-nemaye-u-twitter-zhartuyut-nad-ideyeyu-pro-te-shcho-zhitomira-ne-isnuye-dobirka-memov-50276520.html'),
+(8, 'fish.gif', 'Dont.. Cry...', 'https://media.tenor.com/R5IECfIf34YAAAAd/fish-spinning.gif'),
+(9, 'Валєра', 'Мовчавливий(ні)', 'Quet#1595'),
+(10, 'Ігор', 'Полу-програміст', 'http://chhumor41084.volt.chost.com.ua/index.php'),
+(11, 'Ірак', 'Країна', 'https://www.google.com/maps?q=%D0%86%D1%80%D0%B0%D0%BA&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiLlam4_IH_AhXIUXcKHZSiCkMQ_AUoA3oECAEQBQ'),
+(12, 'Україна', 'Країна', 'https://www.google.com/maps?q=%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0&um=1&ie=UTF-8&sa=X&ved=2ahUKEwju5b7H_YH_AhXkwosKHQVOCCYQ_AUoA3oECAEQBQ'),
+(14, 'Куцевський', ':)', 'https://youtu.be/dQw4w9WgXcQ'),
+(15, 'Марченко', ':)', 'https://www.youtube.com/watch?v=hvL1339luv0&ab_channel=RapidLiquid'),
+(16, 'Анекдоти', 'Рофли та крінжи від Ігоря', 'http://chhumor41084.volt.chost.com.ua/index.php'),
+(17, 'Бєлґород', 'БНР', 'https://www.google.com/maps?q=%D0%B1%D0%B5%D0%BB%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjc-fWtuYn_AhUDtosKHbX1BIAQ_AUoAnoECAEQBA'),
+(19, 'Правило Ігоря', 'Математика', 'https://media.tenor.com/QvKUP9HmZ5QAAAAd/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB%D0%B8%D0%BA%D0%BA%D1%80%D0%B8%D1%87%D0%B8%D1%82%D0%B8%D1%81%D0%B3%D0%BE%D1%80%D0%B0%D0%B5%D1%82-%D1%81%D0%BC%D0%B0%D0%B9%D0%BB%D0%B8%D0%BA.gif');
+
+--
+-- Індекси збережених таблиць
+--
+
+--
+-- Індекси таблиці `something`
+--
+ALTER TABLE `something`
+  ADD PRIMARY KEY (`id`);
+ALTER TABLE `something` ADD FULLTEXT KEY `name` (`name`,`description`,`url`);
+
+--
+-- AUTO_INCREMENT для збережених таблиць
+--
+
+--
+-- AUTO_INCREMENT для таблиці `something`
+--
+ALTER TABLE `something`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
