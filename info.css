@@ -1,0 +1,53 @@
+body {
+    justify-content: center;
+    align-items: center;
+    background-image: url("фон.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  .menu-container{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+   }
+   .contact{
+       position: fixed;
+       top: 0;
+       left: 80%;
+       transform: translate(-50%);
+      }
+      .menu {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+     }
+     
+     .menu__item {
+       display: inline-block;
+       margin-right: 10px;
+     }
+     
+     .menu__link {
+       text-decoration: none;
+       padding: 5px;
+       border-radius: 5px;
+     }
+     
+     .menu__link {
+       background-color: #333;
+       color: #ffffff;
+     }
+     .text {
+      text-align: center;
+    }
+    
+    .text h1 {
+      color: rgb(0, 255, 64);
+      margin: 100px;
+    }
+    .text h2 {
+      color: rgb(0, 255, 64);
+      margin: 100px;
+    }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Пошуковий сайт</title>
+</head>
+<body>
+  
+    <div class="menu-container" id="menu-container" data-menu>
+        <nav>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="index.html" class="menu__link">Пошук</a>
+            </li>
+            <li class="menu__item">
+              <a href="info.html" class="menu__link">Можливості</a>
+            </li>
+            <li class="menu__item">
+              <a href="pro.html" class="menu__link">Про створення</a>
+            </li>
+          </ul>
+        </nav>
+    </div>
+    <div class="header">
+      <div class="logo">
+        <h1>ORDIUS</h1>
+      </div>
+      <div class="search-bar">
+        <form name="form1" method="get" action="search.php">
+          <input type="text" placeholder="Python" name="search" aria-label="Search" required>
+          <input type="submit" value="Search" name="submit">
+        </form>
+      </div>
+    </div>
+<div class="contact" id="contact" data-menu>
+    <nav>
+      <li class="menu__item">
+        <a href="contacts.php" class="menu__link menu__link--current">Напишіть нам!</a>
+      </li>
+    </nav>
+</div>
+</body>
+</html>

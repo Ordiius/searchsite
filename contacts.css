@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("фон.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+}
+.menu-container{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+   }
+   .contact{
+       position: fixed;
+       top: 0;
+       left: 80%;
+       transform: translate(-50%);
+      }
+      .menu {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+     }
+     
+     .menu__item {
+       display: inline-block;
+       margin-right: 10px;
+     }
+     
+     .menu__link {
+       text-decoration: none;
+       color: #333;
+       padding: 5px;
+       border-radius: 5px;
+     }
+     
+     .menu__link {
+       background-color: #333;
+       color: #fff;
+     }
+     
+.obratnuj-zvonok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+}
+
+.obratnuj-zvonok label {
+    font-weight: bold;
+}
+
+.obratnuj-zvonok input[type='text'],
+.obratnuj-zvonok input[type='submit'] {
+    margin: 5px 0;
+}
+.form-zvonok{
+	flex-direction: column;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.form-zvonok div{
+	padding: 15px 0;
+}
+.bot-send-mail{
+	box-sizing: border-box;
+	width: 100%;
+}
+.form-zvonok label,.form-zvonok input{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+.form-zvonok label{
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.form-zvonok input{
+	padding: 10px 15px;
+	margin-top: 10px;
+}
+.form-zvonok label span{
+	color: red;
+}
+.form-zvonok .bot-send-mail{
+	padding: 15px;
+	margin-top: 10px;
+	background: none;
+	border: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	background-color: #009b97;
+	cursor: pointer;
+	border: 3px #009b97 solid;
+	border-radius: 5px;
+}
+.form-zvonok .bot-send-mail:hover{
+	color: #009b97;
+	background-color: #fff;
+}

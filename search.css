@@ -1,0 +1,77 @@
+body {
+    justify-content: center;
+    align-items: center;
+    padding:0px;
+    text-align:center;
+    height:100vh;
+    background-color: grey;
+    background-image: url("фон.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+}
+.menu-container{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+   }
+   .contact{
+       position: fixed;
+       top: 0;
+       left: 80%;
+       transform: translate(-50%);
+      }
+      .menu {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+     }
+     
+     .menu__item {
+       display: inline-block;
+       margin-right: 10px;
+     }
+     
+     .menu__link {
+       text-decoration: none;
+       color: #333;
+       padding: 5px;
+       border-radius: 5px;
+     }
+     
+     .menu__link {
+       background-color: #333;
+       color: #fff;
+     }
+     
+.search-results {
+    text-align: center;
+}
+
+.error-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.good-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 196, 245);
+}
+.card-title1 {
+    color: aliceblue;
+    font-size: 24px;
+}
+.card-title2 {
+    color: aliceblue;
+    font-size: 24px;
+}
+.card-title3 {
+    color: aliceblue;
+    font-size: 24px; 
+}
+.normal-link {
+    color: #e0fafd; 
+    text-decoration: none;
+  }
